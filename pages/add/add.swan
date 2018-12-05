@@ -1,0 +1,27 @@
+<view class="container">
+	<form bindsubmit="formSubmitHandle" report-submit>
+		<view class="t1">
+			<view>标签</view>
+			<!-- <input name="title" placeholder="标签" placeholder-class="input-placeholder" /> -->
+			<picker mode="selector" value="{{index}}" range="{{array}}" bind:change="selectorChange" title="普通选择器">
+				<view class="picker label">
+					 {{array[index]}}
+				</view>
+			</picker>
+		</view>
+		<view class="t1">
+			<view>标题</view>
+			<input name="title" value="{= editdata.title =}" placeholder="标题" placeholder-class="input-placeholder" />
+		</view>
+
+		<view class="t1">
+			<view>内容</view>
+			<view class="c">
+				<textarea name="content" value="{= editdata.content =}" placeholder="记事内容" placeholder-class="input-placeholder" />
+			</view>
+		</view>
+		<view class="btn">
+			<button class="form-button" type="primary" form-type="submit">保存</button>
+		</view>
+	</form>
+</view>

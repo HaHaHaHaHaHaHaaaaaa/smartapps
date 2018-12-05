@@ -1,0 +1,14 @@
+<view class="container">
+
+	<view s-for="notes" class="item"  bind:tap="onItemClicked" data-item="{{item}}" data-id="{{item.id}}" bind:longpress="longpressed" >
+		<view class="item-header border-bottom">
+			<text>{{item.title}}</text>
+			<text class="tag">{{ item.category }}</text>
+		</view>
+		<view class="item-content">
+			<text class="date">{{item.date}}</text>
+            <text class="content">{{item.content}}</text>
+		</view>
+	</view>
+	<view class="add" bindtap="onAddClicked"></view>
+</view>

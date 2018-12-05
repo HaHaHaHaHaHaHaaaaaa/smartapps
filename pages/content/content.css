@@ -1,0 +1,33 @@
+.item{
+    padding: .17rem .12rem .17rem .12rem;
+    border-bottom: .07rem solid #f5f5f5;
+    background: #fff;
+}
+.item-header{
+    font-size: .18rem;
+    font-weight: 500;
+}
+
+.tag{
+    font-size: .14rem;
+    color: orange;
+    font-weight: normal
+}
+
+.item-content{
+    padding-top: .08rem;
+    font-size: .14rem;
+    white-space: normal
+}
+.date{
+    color: #707070;
+}
+.content{
+    color: #afaeae;
+}
+
+.edit{
+     width: .2rem;
+    height: .2rem;
+    float: right
+}

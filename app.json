@@ -1,0 +1,55 @@
+{
+    "debug": true,
+    "pages": [
+        "pages/note/note",
+        "pages/me/me",
+        "pages/add/add",
+        "pages/label/label",
+        "pages/label/label",
+        "pages/create/create",
+        "pages/content/content",
+        "pages/notelist/notelist",
+        "pages/about/about"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#da3131",
+        "navigationBarTitleText": "简易记事本",
+        "navigationBarTextStyle": "white",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "tabBar": {
+        "color": "#a2a2a2",
+        "selectedColor": "#3388ff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/label/label",
+                "iconPath": "images/component_normal.png",
+                "selectedIconPath": "images/component_selected.png",
+                "text": "标签"
+            },
+            {
+                "pagePath": "pages/note/note",
+                "iconPath": "images/component_normal.png",
+                "selectedIconPath": "images/component_selected.png",
+                "text": "记事"
+            },
+            {
+                "pagePath": "pages/me/me",
+                "iconPath": "images/component_normal.png",
+                "selectedIconPath": "images/component_selected.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "preloadRule": {},
+    "subPackages": []
+}

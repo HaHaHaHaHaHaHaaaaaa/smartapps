@@ -1,0 +1,31 @@
+.item{
+    padding: .17rem .12rem .17rem .12rem;
+    border-bottom: .07rem solid #edf1f5;
+    background: #fff;
+}
+.item-header{
+    font-size: .18rem;
+    font-weight: 500;
+    padding-bottom: .06rem;
+}
+
+.tag{
+    font-size: .14rem;
+    color: orange;
+    font-weight: normal
+}
+
+.item-content{
+    padding-top: .08rem;
+    margin: .06rem 0;
+    font-size: .14rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.date{
+    color: #707070;
+}
+.content{
+    color: #afaeae;
+}

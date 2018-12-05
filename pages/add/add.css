@@ -1,0 +1,45 @@
+swan-form{
+    margin:.12rem .17rem;
+}
+
+swan-button{
+    font-size: .16rem;
+}
+
+.t1{
+    padding: .12rem 0
+}
+
+.label{
+    background: #fff;
+    padding: .05rem .12rem;
+    border-radius: 4px;
+    color: #444444;
+    margin-top: .12rem;
+}
+
+swan-input,{
+    padding: .17rem;
+}
+.c{
+    background: #fff;
+    padding: .12rem;
+    margin-top: .17rem;
+}
+
+swan-input{
+    background: #fff;
+    margin:.12rem 0;
+    padding: .17rem .12rem ;
+    border-radius: 4px;
+}
+
+
+swan-textarea{
+    background: #fff;
+    width: 100%;
+    border-radius: 4px;
+}
+swan-button{
+    margin: 0
+}

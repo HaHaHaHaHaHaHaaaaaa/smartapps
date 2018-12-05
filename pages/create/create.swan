@@ -1,0 +1,10 @@
+<view class="container">
+	<form bindsubmit="formSubmitHandle" report-submit>
+		<view class="t1">
+			<view style="margin-bottom:.06rem">请填写标签名称</view>
+			<input name="title" value="{= title =}" placeholder="标签名称" placeholder-class="input-placeholder" />
+		</view>
+
+		<button class="sv" type="primary"  form-type="submit">保存</button>
+	</form>
+</view>

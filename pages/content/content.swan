@@ -1,0 +1,13 @@
+<view class="container">
+	<view  class="item">
+		<view class="item-header border-bottom">
+			<text>{{items.title}}</text>
+			<text class="tag">{{ items.category }}</text>
+            <image class="edit" src="../../images/edit.png" bind:tap="editNote"></image>
+		</view>
+		<view class="item-content">
+			<text class="date">{{items.date}}</text>
+			<text class="content">{{items.content}}</text>
+		</view>
+	</view>
+</view>
