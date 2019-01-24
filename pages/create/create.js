@@ -7,7 +7,7 @@ Page({
     },
 
     formSubmitHandle: function (e) {
-        console.log('form表单submit：', e.detail.value);
+        // console.log('form表单submit：', e.detail.value);
         const title = e.detail.value.title
         if (!title || title.trim() === '') {
             swan.showToast({
@@ -16,7 +16,7 @@ Page({
             })
         } else {
             let c = JSON.parse(swan.getStorageSync('category'));
-            console.log(c)
+            // console.log(c)
             c.push({ id: Date.now(), name: title })
 
             var pages = getCurrentPages()

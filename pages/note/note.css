@@ -1,13 +1,72 @@
-.add{
+.c{
+    position: relative;
+    height: 100%;
+}
+.floaticons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: fixed;
-    bottom: .17rem ;
-    right: .17rem;
+    width: 100%;
+    bottom: 0;
+}
+.add{
+    right: .27rem;
     height: .3rem;
     width:.3rem;
     background-image: url('../../images/add.png');
     background-position: center;
     background-size: 100%;
 }
+.rec{
+    left: .17rem;
+    height: .3rem;
+    width:.3rem;
+    background-image: url('../../images/add.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.voice{
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width:.3rem;
+    background-image: url('../../images/voice.svg');
+    background-position: center;
+    background-size: 100%;
+}
+
+.imgrec{
+    left: .27rem;
+    height: .7rem;
+    width:.7rem;
+    background-image: url('../../images/imgrec.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.onRec{
+    width:100px;
+    height:40px;
+    background:black;
+    color: #fff;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: .14rem;
+}
+
+
+
+.noRec{
+    display: none;
+}
+
 .item{
     padding: .17rem .12rem .17rem .12rem;
     border-bottom: .07rem solid #f5f5f5;

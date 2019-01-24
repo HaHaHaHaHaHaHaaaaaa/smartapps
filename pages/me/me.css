@@ -71,6 +71,7 @@
     justify-content: center;
     height: 2.5rem;
     flex-direction: column;
+    margin: 0 .17rem;
 }
 
 .user_avatar{
@@ -84,7 +85,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-        margin-top: .06rem;
+    margin-top: .06rem;
 }
 
 .gender{

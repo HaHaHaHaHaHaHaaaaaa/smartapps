@@ -27,11 +27,11 @@ Page({
 
         let c = swan.getStorageSync('notes');
         if (c) {
-            console.log(c)
+            // console.log(c)
             this.setData('notes', JSON.parse(c).filter(v=>v.category===options.name))
         }
 
-        console.log(options)
+        // console.log(options)
     },
     longpressed: function (e) {
         const id = e.currentTarget.dataset.id;
@@ -55,14 +55,14 @@ Page({
     },
     onShow: function (options) {
         // 监听页面显示的生命周期函数
-        console.log(options)
+        // console.log(options)
     },
     onHide: function () {
         // 监听页面隐藏的生命周期函数
     },
     onUnload: function () {
         // 监听页面卸载的生命周期函数
-        console.log('on Unload')
+        // console.log('on Unload')
     },
     onPullDownRefresh: function () {
         // 监听用户下拉动作

@@ -4,7 +4,7 @@ Page({
     },
     onLoad: function (options) {
         // 监听页面加载的生命周期函数
-        console.log(options.item)
+        // console.log(options.item)
         this.setData('items', JSON.parse(options.item))
     },
     onReady: function () {
@@ -12,7 +12,7 @@ Page({
     },
     onShow: function () {
         // 监听页面显示的生命周期函数  
-        console.log('options')
+        // console.log('options')
     },
     onHide: function () {
         // 监听页面隐藏的生命周期函数

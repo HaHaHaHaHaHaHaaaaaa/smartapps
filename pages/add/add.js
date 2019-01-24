@@ -6,7 +6,7 @@ Page({
     },
     onLoad: function (options) {
         // 监听页面加载的生命周期函数
-        console.log('onload')
+        // console.log('onload')
         let c = swan.getStorageSync('category')
         if (c) {
             c = JSON.parse(c)
@@ -53,7 +53,7 @@ Page({
                 })
 
                 var pages = getCurrentPages()
-                console.log(pages)
+                // console.log(pages)
                 var prePage = pages[pages.length - 2]
                 note.id = ed.id
                 prePage.setData('items', note)
@@ -75,7 +75,7 @@ Page({
 
     },
     selectorChange: function (e) {
-        console.log('picker-selector changed，值为', e.detail.value)
+        // console.log('picker-selector changed，值为', e.detail.value)
         this.setData(
             'index', e.detail.value
         );

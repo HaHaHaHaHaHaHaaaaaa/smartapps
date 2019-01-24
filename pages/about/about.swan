@@ -1,5 +1,9 @@
-<view class="container">
+<view class="c">
     <view class="about">
-        感谢您的关注!
+        <image  src="{{'../../images/logo.png'}}"></image>
+        <text class="name">明日时尚记事本</text>
+        <text class="version">version 1.0.7</text>
+        <view class="description">提供本地记事 存储最多10M</view>
+        <view class="company">北京明日时尚信息技术有限公司</view>
     </view>
 </view>

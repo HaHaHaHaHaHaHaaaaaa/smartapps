@@ -1,0 +1,9 @@
+<view class="container">
+	<view s-for="item, index in items" class="group-bd">
+		<view class="item border-bottom " bind:tap="itemClick" data-item="{{item}}">
+			<image class="item-logo" src="{{item.icon}}"></image>
+			<text class="item-desc">{{item.name}}</text>
+			<image class="item-logo item-toggle" src="../../images/right_arrow.png"></image>
+		</view>
+	</view>
+</view>

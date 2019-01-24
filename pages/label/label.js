@@ -7,7 +7,7 @@ Page({
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
-        console.log('onload')
+        // console.log('onload')
         this.setData('items', [{
             id: 999999999,
             name: "自定义标签 +"
@@ -52,7 +52,7 @@ Page({
                 let c = swan.getStorageSync('category');
                 if (c) {
                     c = JSON.parse(c).filter(v => v.id !== id)
-                    console.log(c)
+                    // console.log(c)
                     swan.setStorage({
                         key: 'category',
                         data: JSON.stringify(c)

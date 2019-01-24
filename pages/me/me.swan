@@ -1,9 +1,10 @@
 <view class="container">
-	<form bindsubmit="formSubmitHandle" s-if="!hasLog" report-submit>
+	<!-- <form bindsubmit="formSubmitHandle" s-if="!hasLog" report-submit>
 		<view class="weui-cell weui-cell_input it">
 			<view class="weui-cell__hd">
 				<view class="weui-label">
-					<image src="../../images/user.png" class="ic"></image>登录</view>
+					<image src="../../images/user.png" class="ic"></image>登录
+				</view>
 			</view>
 			<view class="weui-cell__bd">
 				<input name="username" class="weui-input" placeholder="请输入账户名" />
@@ -13,7 +14,8 @@
 		<view class="weui-cell weui-cell_input it">
 			<view class="weui-cell__hd">
 				<view class="weui-label">
-					<image src="../../images/lock.png" class="ic"></image>注册</view>
+					<image src="../../images/lock.png" class="ic"></image>注册
+				</view>
 			</view>
 			<view class="weui-cell__bd">
 				<input name="password" password="true" class="weui-input" placeholder="请输入密码" />
@@ -22,29 +24,37 @@
 
 		<button class="weui-btn" type="primary" form-type="submit">登录</button>
 		<button class="weui-btn" type="primary" bind:tap="bdAppLogin">百度App账号登录</button>
-	</form>
-
-	<block s-if="hasLog">
-		<view class="user">
-			<image class="user_avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl :'../../images/avator.png'}}"></image>
-
-			<view class="user_name">
-				<text class="name"> {{userInfo.nickName}}  </text>
-				<image class="gender" src="../../images/{{userInfo.gender}}.png"></image>
-			</view>
+	</form> -->
 
 
+	<view class="user" s-if="userInfo">
+		<image class="user_avatar" src="{{userInfo.avatarUrl ? userInfo.avatarUrl :'../../images/avator.png'}}"></image>
+
+		<view class="user_name">
+			<text class="name"> {{userInfo.nickName}} </text>
+			<image class="gender" src="{{userInfo ?  ('../../images/'+userInfo.gender+'.png') :'../images/0.png'}} "></image>
 		</view>
 
-		<view s-for="item, index in items" class="group-bd">
-			<view class="item border-bottom {{item.open ? '' : 'item-close'}}" bind:tap="itemClick" data-url="{{item.url}}">
-				<!-- <image class="item-logo" src="{{item.icon}}"></image> -->
-				<icon  type="personal"  class="icon-size" />
-				<text class="item-desc">{{item.name}}</text>
-				<image class="item-logo item-toggle" src="../../images/right_arrow.png"></image>
-			</view>
+
+	</view>
+
+	<view s-for="item, index in items" class="group-bd">
+		
+		<view   class="item border-bottom {{item.open ? '' : 'item-close'}}" bind:tap="itemClick" data-url="{{item.url}}">
+			<image class="item-logo" src="{{item.icon}}"></image>
+
+			<text class="item-desc">{{item.name}}</text>
+			<image class="item-logo item-toggle" src="{{'../../images/right_arrow.png'}}"></image>
 		</view>
-	</block>
+	</view>
+
+	<view s-if="!hasLog"  class="group-bd">
+		<view class="item border-bottom {{item.open ? '' : 'item-close'}}" bind:tap="bdAppLogin">
+			<image class="item-logo" src="{{'../../images/login.svg'}}"></image>
+			<text class="item-desc">百度App账号登录</text>
+			<image class="item-logo item-toggle" src="{{'../../images/right_arrow.png'}}"></image>
+		</view>
+	</view>
 
 
 </view>

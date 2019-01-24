@@ -9,11 +9,13 @@
         "pages/create/create",
         "pages/content/content",
         "pages/notelist/notelist",
-        "pages/about/about"
+        "pages/about/about",
+        "pages/setting/setting",
+        "pages/declaration/declaration"
     ],
     "window": {
         "navigationBarBackgroundColor": "#da3131",
-        "navigationBarTitleText": "简易记事本",
+        "navigationBarTitleText": "明日时尚记事本",
         "navigationBarTextStyle": "white",
         "backgroundTextStyle": "light",
         "enablePullDownRefresh": false
